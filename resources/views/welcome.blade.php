@@ -729,9 +729,7 @@
                                     </template>
                                     <span class="font-bold text-base ml-1" x-text="match.teamA ? match.teamA.name : '-' "></span>
                                 </div>
-                                <div class="items-center">
-                                    <span class="score-box font-bold" x-text="(match.score_a ?? '-') + ' : ' + (match.score_b ?? '-')"></span>
-                                </div>
+                                <span class="mx-2 font-bold text-gray-600">vs</span>
                                 <div class="flex items-center gap-2">
                                     <template x-if="match.teamB && match.teamB.photo">
                                         <img :src="'/storage/' + match.teamB.photo" alt="B" class="team-avatar" />
@@ -741,6 +739,9 @@
                                     </template>
                                     <span class="font-bold text-base ml-1" x-text="match.teamB ? match.teamB.name : '-' "></span>
                                 </div>
+                            </div>
+                            <div class="flex items-center justify-center mb-2">
+                                <span class="score-box font-bold" x-text="(match.score_a ?? '-') + ' : ' + (match.score_b ?? '-')"></span>
                             </div>
                             <div class="text-gray-600 text-sm mb-2" x-text="'Venue: ' + (match.venue ?? '-')"></div>
                             <div>

@@ -37,7 +37,7 @@
             @error('description') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
         </div>
         <div>
-            <label class="block font-semibold mb-1">Gender Category</label>
+            <label class="block font-semibold mb-1">Category</label>
             <flux:select wire:model.defer="gender" class="border p-2 rounded w-full">
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>

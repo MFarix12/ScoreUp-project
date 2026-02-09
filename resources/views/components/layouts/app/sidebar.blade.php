@@ -10,7 +10,7 @@
     <head>
         @include('partials.head')
     </head>
-    <body class="min-h-screen bg-[#F9FAFB] text-[#1F2937]">
+    <body class="min-h-screen bg-[#000000] text-[#1F2937]">
         <flux:sidebar sticky stashable class="border-e border-[#E5E7EB] bg-[#FFFFFF]">
             <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
